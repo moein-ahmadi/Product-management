@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./style.css" />
+    <title>Tamrin</title>
+  </head>
+  <body>
+    <input
+      type="text"
+      placeholder="search..."
+      class="form-Text"
+      id="searchItemDom"
+    />
+    <select id="sort">
+      <option value="byEdited">byEdited</option>
+      <option value="byCreated">byCreated</option>
+    </select>
+    <form id="product-form">
+      <input type="checkbox" name="toggle" id="toggle" />
+      <input
+        type="text"
+        name="productTitle"
+        class="form-Text"
+        placeholder="TITLE..."
+        autocomplete="off"
+        id="product-Title"
+      />
+      <input
+        type="text"
+        name="productPrice"
+        class="form-Text"
+        placeholder="PRICE..."
+        autocomplete="off"
+        id="product-Price"
+      />
+      <input type="submit" value="submit" class="form-button" />
+    </form>
+    <div id="show-product"></div>
+  </body>
+  <script src="moment.js"></script>
+  <script src="jalali-moment.js"></script>
+  <script src="uuid.js"></script>
+  <script src="./function.js"></script>
+  <script src="./java.js"></script>
+</html>
